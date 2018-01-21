@@ -1,0 +1,191 @@
+\def\mytitle{Summary}
+    \def\myauthor{Stefan Peng}
+	\input{header}
+	\begin{table}[htbp]
+      \begin{minipage}{\linewidth}
+      \setlength{\tymax}{0.5\linewidth}
+      \centering
+      \small
+    \caption{Keywords}
+    \label{keywords}
+      \begin{tabulary}{\textwidth}{@{}LLL@{}} \toprule
+    KEYWORD&DESCRIPTION&EXAMPLE\\
+      \midrule
+    \texttt{and}&Logical and.&\texttt{True and False == False}\\
+    \texttt{as}&Part of the with-as statement.&\texttt{with X as Y: pass}\\
+    \texttt{assert}&Assert (ensure) that something is true.&\texttt{assert False, "Error!"}\\
+    \texttt{break}&Stop this loop right now.&\texttt{while True: break}\\
+    \texttt{class}&Define a class.&\texttt{class Person(object)}\\
+    \texttt{continue}&Don't process more of the loop, do it again.&\texttt{while True: continue}\\
+    \texttt{def}&Define a function.&\texttt{def X(): pass}\\
+    \texttt{del}&Delete from dictionary.&\texttt{del X[Y]}\\
+    \texttt{elif}&Else if condition.&\texttt{if: X; elif: Y; else: J}\\
+    \texttt{else}&Else condition.&\texttt{if: X; elif: Y; else: J}\\
+    \texttt{except}&If an exception happens, do this.&\texttt{except ValueError, e: print e}\\
+    \texttt{exec}&Run a string as Python.&\texttt{exec 'print "hello"'}\\
+    \texttt{finally}&Exceptions or not, finally do this no matter what.&\texttt{finally: pass}\\
+    \texttt{for}&Loop over a collection of things.&\texttt{for X in Y: pass}\\
+    \texttt{from}&Importing specific parts of a module.&\texttt{import X from Y}\\
+    \texttt{global}&Declare that you want a global variable.&\texttt{global X}\\
+    \texttt{if}&If condition.&\texttt{if: X; elif: Y; else: J}\\
+    \texttt{import}&Import a module into this one to use.&\texttt{import os}\\
+    \texttt{in}&Part of for-loops. Also a test of X in Y.&\texttt{for X in Y: pass also 1 in [1] == True}\\
+    \texttt{is}&Like == to test equality.&\texttt{1 is 1 == True}\\
+    \texttt{lambda}&Create a short anonymous function.&\texttt{s = lambda y: y ** y; s(3)}\\
+    \texttt{not}&Logical not.&\texttt{not True == False}\\
+    \texttt{or}&Logical or.&\texttt{True or False == True}\\
+    \texttt{pass}&This block is empty.&\texttt{def empty(): pass}\\
+    \texttt{print}&Print this string.&\texttt{print 'this string'}\\
+    \texttt{raise}&Raise an exception when things go wrong.&\texttt{raise ValueError("No")}\\
+    \texttt{return}&Exit the function with a return value.&\texttt{def X(): return Y}\\
+    \texttt{try}&Try this block, and if exception, go to except.&\texttt{try: pass}\\
+    \texttt{while}&While loop.&\texttt{while X: pass}\\
+    \texttt{with}&With an expression as a variable do.&\texttt{with X as Y: pass}\\
+    \texttt{yield}&Pause here and return to caller.&\texttt{def X(): yield Y; X().next()}\\
+    
+    \bottomrule
+
+  \end{tabulary}
+      \end{minipage}
+      \end{table}
+
+
+    \begin{table}[htbp]
+      \begin{minipage}{\linewidth}
+      \setlength{\tymax}{0.5\linewidth}
+      \centering
+      \small
+    \caption{Data Types}
+    \label{datatypes}
+      \begin{tabulary}{\textwidth}{@{}LLL@{}} \toprule
+    TYPE&DESCRIPTION&EXAMPLE\\
+      \midrule
+    \texttt{True}&True boolean value.&\texttt{True or False == True}\\
+    \texttt{False}&False boolean value.&\texttt{False and True == False}\\
+    \texttt{None}&Represents ``nothing'' or ``no value''.&\texttt{x = None}\\
+    \texttt{strings}&Stores textual information.&\texttt{x = "hello"}\\
+    \texttt{numbers}&Stores integers.&\texttt{i = 100}\\
+    \texttt{floats}&Stores decimals.&\texttt{i = 10.389}\\
+    \texttt{lists}&Stores a list of things.&\texttt{j = [1,2,3,4]}\\
+    \texttt{dicts}&Stores a key=value mapping of things.&\texttt{e = \{'x': 1, 'y': 2\}}\\
+    
+    \bottomrule
+
+  \end{tabulary}
+      \end{minipage}
+      \end{table}
+
+
+    \begin{table}[htbp]
+      \begin{minipage}{\linewidth}
+      \setlength{\tymax}{0.5\linewidth}
+      \centering
+      \small
+    \caption{String Escape Sequences}
+    \label{stringescapesequences}
+      \begin{tabulary}{\textwidth}{@{}LL@{}} \toprule
+    ESCAPE&DESCRIPTION\\
+      \midrule
+    \texttt{$\backslash$$\backslash$}&Backslash\\
+    \texttt{$\backslash$'}&Single-quote\\
+    \texttt{$\backslash$"}&Double-quote\\
+    \texttt{$\backslash$a}&Bell\\
+    \texttt{$\backslash$b}&Backspace\\
+    \texttt{$\backslash$f}&Formfeed\\
+    \texttt{$\backslash$n}&Newline\\
+    \texttt{$\backslash$r}&Carriage\\
+    \texttt{$\backslash$t}&Tab\\
+    \texttt{$\backslash$v}&Vertical tab\\
+    
+    \bottomrule
+
+  \end{tabulary}
+      \end{minipage}
+      \end{table}
+
+
+    \begin{table}[htbp]
+      \begin{minipage}{\linewidth}
+      \setlength{\tymax}{0.5\linewidth}
+      \centering
+      \small
+    \caption{String Formats}
+    \label{stringformats}
+      \begin{tabulary}{\textwidth}{@{}LLL@{}} \toprule
+    ESCAPE&DESCRIPTION&EXAMPLE\\
+      \midrule
+    \texttt{\%d}&Decimal integers (not floating point).&\texttt{"\%d" \% 45 == '45'}\\
+    \texttt{\%i}&Same as \texttt{\%d}.&\texttt{"\%i" \% 45 == '45'}\\
+    \texttt{\%o}&Octal number.&\texttt{"\%o" \% 1000 == '1750'}\\
+    \texttt{\%u}&Unsigned decimal.&\texttt{"\%u" \% -1000 == '-1000'}\\
+    \texttt{\%x}&Hexadecimal lowercase.&\texttt{"\%x" \% 1000 == '3e8'}\\
+    \texttt{\%X}&Hexadecimal uppercase.&\texttt{"\%X" \% 1000 == '3E8'}\\
+    \texttt{\%e}&Exponential notation, lowercase `e'.&\texttt{"\%e" \% 1000 == '1.000000e+03'}\\
+    \texttt{\%E}&Exponential notation, uppercase `E'.&\texttt{"\%E" \% 1000 == '1.000000E+03'}\\
+    \texttt{\%f}&Floating point real number.&\texttt{"\%f" \% 10.34 == '10.340000'}\\
+    \texttt{\%F}&Same as \texttt{\%f}.&\texttt{"\%F" \% 10.34 == '10.340000'}\\
+    \texttt{\%g}&Either \texttt{\%f} or \texttt{\%e}, whichever is shorter.&\texttt{"\%g" \% 10.34 == '10.34'}\\
+    \texttt{\%G}&Same as \texttt{\%g} but uppercase.&\texttt{"\%G" \% 10.34 == '10.34'}\\
+    \texttt{\%c}&Character format.&\texttt{"\%c" \% 34 == '"'}\\
+    \texttt{\%r}&Repr format (debugging format).&\texttt{"\%r" \% int == "$<$type 'int'$>$"}\\
+    \texttt{\%s}&String format.&\texttt{"\%s there" \% 'hi' == 'hi there'}\\
+    \texttt{\%\%}&A percent sign.&\texttt{"\%g\%\%" \% 10.34 == '10.34\%'}\\
+    
+    \bottomrule
+
+  \end{tabulary}
+      \end{minipage}
+      \end{table}
+
+
+    \begin{table}[htbp]
+      \begin{minipage}{\linewidth}
+      \setlength{\tymax}{0.5\linewidth}
+      \centering
+      \small
+    \caption{Operators}
+    \label{operators}
+      \begin{tabulary}{\textwidth}{@{}LLL@{}} \toprule
+    OPERATOR&DESCRIPTION&EXAMPLE\\
+      \midrule
+    \texttt{+}&Addition&\texttt{2 + 4 == 6}\\
+    \texttt{-}&Subtraction&\texttt{2 - 4 == -2}\\
+    \texttt{*}&Multiplication&\texttt{2 * 4 == 8}\\
+    \texttt{**}&Power of&\texttt{2 ** 4 == 16}\\
+    \texttt{\slash }&Division&\texttt{2 \slash  4.0 == 0.5}\\
+    \texttt{/\slash }&Floor division&\texttt{2 /\slash  4.0 == 0.0}\\
+    \texttt{\%}&String interpolate or modulus&\texttt{2 \% 4 == 2}\\
+    \texttt{$<$}&Less than&\texttt{4 $<$ 4 == False}\\
+    \texttt{$>$}&Greater than&\texttt{4 $>$ 4 == False}\\
+    \texttt{$<$=}&Less than equal&\texttt{4 $<$= 4 == True}\\
+    \texttt{$>$=}&Greater than equal&\texttt{4 $>$= 4 == True}\\
+    \texttt{==}&Equal&\texttt{4 == 5 == False}\\
+    \texttt{!=}&Not equal&\texttt{4 != 5 == True}\\
+    \texttt{$<$$>$}&Not equal&\texttt{4 $<$$>$ 5 == True}\\
+    \texttt{( )}&Parenthesis&\texttt{len('hi') == 2}\\
+    \texttt{[ ]}&List brackets&\texttt{[1,3,4]}\\
+    \texttt{\{ \}}&Dict curly braces&\texttt{\{'x': 5, 'y': 10\}}\\
+    \texttt{@}&At (decorators)&\texttt{@classmethod}\\
+    \texttt{,}&Comma&\texttt{range(0, 10)}\\
+    \texttt{:}&Colon&\texttt{def X():}\\
+    \texttt{.}&Dot&\texttt{self.x = 10}\\
+    \texttt{=}&Assign equal&\texttt{x = 10}\\
+    \texttt{;}&semi-colon&\texttt{print "hi"; print "there"}\\
+    \texttt{+=}&Add and assign&\texttt{x = 1; x += 2}\\
+    \texttt{-=}&Subtract and assign&\texttt{x = 1; x -= 2}\\
+    \texttt{*=}&Multiply and assign&\texttt{x = 1; x *= 2}\\
+    \texttt{\slash =}&Divide and assign&\texttt{x = 1; x \slash = 2}\\
+    \texttt{/\slash =}&Floor divide and assign&\texttt{x = 1; x /\slash = 2}\\
+    \texttt{\%=}&Modulus assign&\texttt{x = 1; x \%= 2}\\
+    \texttt{**=}&Power assign&\texttt{x = 1; x **= 2}\\
+    
+    \bottomrule
+
+  \end{tabulary}
+      \end{minipage}
+      \end{table}
+
+
+    
+      \end{document}
+    
